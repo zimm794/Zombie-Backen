@@ -1,0 +1,52 @@
+<Gouki>
+
+    <append xpath="/blocks">
+	
+	    <block name="cleanMoneyATM">
+	        <property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Workstation"/>
+	        <property name="Material" value="Mmetal_hard"/>
+	        <property name="MaxDamage" value="5000"/>
+	        <property name="Shape" value="ModelEntity"/>
+	        <property name="Model" value="Entities/Commercial/ATMPrefab"/>
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="Tags" value="safes,door"/>
+	        <property name="DisplayType" value="blockHardenedMulti"/>
+	        <property name="Path" value="solid"/>
+	        <property name="Place" value="TowardsPlacer"/>
+	        <property name="MultiBlockDim" value="1,2,1"/>
+	        <property name="ImposterExchange" value="imposterBlock" param1="18"/>
+	        <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	        <property name="IsTerrainDecoration" value="true"/>
+			<property name="HeatMapStrength" value="12"/>
+	        <property name="HeatMapTime" value="5000"/>
+	        <property name="HeatMapFrequency" value="1000"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="CustomIcon" value="CleanMoneyATM"/>
+			<property name="DescriptionKey" value="CleanMoneyATMDesc"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Workstation">
+		        <property name="CraftingAreaRecipes" value="cleanMoneyATM"/>
+		        <property name="Modules" value="tools,output"/>
+	        </property>
+			<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+	        <property name="OpenSound" value="open_workbench"/>
+	        <property name="CloseSound" value="close_workbench"/>
+			<property name="CraftSound" value="forge_smelt_click"/>
+	        <property name="CraftCompleteSound" value="forge_item_complete"/>
+	        <property name="WorkstationJournalTip" value="workbenchTip"/>
+	        <property class="RepairItems">
+		        <property name="resourceForgedSteel" value="6"/>
+				<property name="resourceMechanicalParts" value="4"/>
+				<property name="resourceElectricParts" value="4"/>
+	        </property>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="TakeDelay" value="15"/>
+	        <property name="EconomicValue" value="8000"/>
+	        <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+		
+	</append>
+
+</Gouki>

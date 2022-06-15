@@ -1,0 +1,48 @@
+<Gouki>
+    <append xpath="/recipes">
+	    
+		<recipe name="cleanMoneyATM" count="1" craft_area="workbench" craft_time="480" tags="learnable,workbenchCrafting">
+	      <ingredient name="resourceForgedSteel" count="60"/>
+	      <ingredient name="resourceMechanicalParts" count="12"/>
+	      <ingredient name="resourceElectricParts" count="12"/>
+	      <ingredient name="resourceDuctTape" count="8"/>
+	      <ingredient name="resourceSpring" count="8"/>
+        </recipe>
+		
+		<recipe name="resourceEmptyMoldCC" count="1" material_based="true" craft_area="forge" craft_tool="toolAnvil" craft_time="60">
+	      <ingredient name="unit_iron" count="10"/>
+	      <ingredient name="unit_clay" count="4"/>
+        </recipe>
+		
+		<recipe name="toolOldCashMold" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+	      <ingredient name="oldCash" count="1"/>
+	      <ingredient name="resourceEmptyMoldCC" count="1"/>
+        </recipe>
+		
+		<recipe name="toolcasinoCoinMold" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+	      <ingredient name="casinoCoin" count="1"/>
+	      <ingredient name="resourceEmptyMoldCC" count="1"/>
+        </recipe>
+		
+        <recipe name="oldCash" count="12" craft_area="cleanMoneyATM" craft_tool="toolOldCashMold" craft_time="20">
+	      <ingredient name="resourcePaper" count="6"/>
+	      <ingredient name="modDyeGreen" count="1"/>
+        </recipe>
+		
+		<recipe name="oldCash" count="12" craft_area="cleanMoneyATM" craft_tool="toolOldCashMold" craft_time="40">
+	      <ingredient name="resourcePaper" count="10"/>
+	      <ingredient name="resourcePaint" count="1"/>
+        </recipe>
+		
+		<recipe name="casinoCoin" count="12" craft_area="cleanMoneyATM" craft_tool="toolcasinoCoinMold" craft_time="20">
+	      <ingredient name="resourceScrapPolymers" count="6"/>
+		  <ingredient name="resourceGoldNugget" count="1"/>
+        </recipe>
+		
+		<recipe name="casinoCoin" count="12" craft_area="cleanMoneyATM" craft_tool="toolcasinoCoinMold" craft_time="40">
+	      <ingredient name="resourceScrapPolymers" count="10"/>
+		  <ingredient name="resourcePaint" count="1"/>
+        </recipe>
+		
+	</append>
+</Gouki>
