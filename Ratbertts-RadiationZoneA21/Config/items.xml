@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+<!-- Start your additiosn after this line -->
+
+    <!-- Adds Radiation Protection to the hazmat gear too -->
+    <append xpath="/items/item[@name='apparelHazmatMask']/effect_group">
+        <triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadiationMask"/>
+        <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationMask"/>
+        <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationSuit"/>
+    </append>
+
+    <append xpath="/items/item[@name='apparelHazmatJacket']/effect_group">
+        <triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadiationChest"/>
+        <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationChest"/>
+        <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationSuit"/>
+    </append>
+
+    <append xpath="/items/item[@name='apparelHazmatGloves']/effect_group">
+        <triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadiationGloves"/>
+        <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationGloves"/>
+        <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationSuit"/>
+    </append>
+
+    <append xpath="/items/item[@name='apparelHazmatPants']/effect_group">
+        <triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadiationLegs"/>
+        <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationLegs"/>
+        <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationSuit"/>
+    </append>
+
+    <append xpath="/items/item[@name='apparelHazmatBoots']/effect_group">
+        <triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadiationBoots"/>
+        <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationBoots"/>
+        <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationSuit"/>
+    </append>
+
+    <append xpath="/items">
+
+        <!-- <item name="unit_radium">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="CustomIcon" value="resourceGoldNugget"/>
+            <property name="CustomIconTint" value="93AB8B"/>
+            <property name="Material" value="Mradium"/>
+            <property name="Stacknumber" value="30000"/>
+            <property name="Weight" value="20"/>
+            <property name="Group" value="Resources"/>
+            <property name="ResourceUnit" value="true"/>
+            <property name="MeltTimePerUnit" value=".5"/> 
+            <property name="UserHidden" value="true"/>
+            <property name="CraftingIngredientTime" value=".5"/>
+            <property name="CreativeMode" value="None"/>
+        </item>                -->
+
+        <item name="resourceRadium"> <!-- scrap material -->
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="CustomIcon" value="resourceGoldNugget"/>
+            <property name="CustomIconTint" value="0,255,0"/>
+            <property name="DescriptionKey" value="resourceRadiumDesc"/>
+            <property name="Material" value="MresourceRadium"/>
+            <property name="Weight" value="20"/>
+            <property name="Stacknumber" value="25"/> <!-- STK resource -->
+            <property name="EconomicValue" value="100"/>
+            <property name="Group" value="Resources"/>
+            <property name="RepairAmount" value="100"/>
+            <property name="LootExpValue" value="1"/>
+            <property name="CraftingIngredientTime" value=".5"/>
+        </item>
+
+        <item name="resourceForgedRadium">
+            <property name="CustomIcon" value="resourceForgedIron"/>
+            <property name="CustomIconTint" value="0,255,0"/>
+            <property name="DescriptionKey" value="resourceForgedRadiumDesc"/>
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="MresourceForgedIron"/>
+            <property name="Stacknumber" value="500"/> <!-- STK resource -->
+            <property name="EconomicValue" value="12"/>
+            <property name="UnlockedBy" value="craftingArmor"/>
+            <property name="CraftingIngredientTime" value="10"/>
+            <property name="RepairTime" value=".5"/>
+            <property name="RepairAmount" value="270"/>
+            <property name="Group" value="Resources,Chemicals"/>
+        </item>        
+ 
+    </append>
+
+</configs>

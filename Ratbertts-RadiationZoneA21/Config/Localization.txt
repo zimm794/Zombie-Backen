@@ -1,0 +1,23 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+modRadiationHelmet,item_modifiers,mod,,,"Radiation Helmet Mod",,Strahlungshelm Mod,
+modRadiationHelmetDesc,item_modifiers,mod,,,"Put this on your helmet to reduce radiation",,"Befestigen Sie dies an Ihrem Helm, um die Strahlung zu reduzieren.",
+modRadiationChest,item_modifiers,mod,,,"Radiation Chest Mod",,Strahlungsweste Mod,
+modRadiationChestDesc,item_modifiers,mod,,,"Put this on your chest to reduce radiation",,"Befestigen Sie dies an Ihre Weste, um die Strahlung zu reduzieren.",
+modRadiationGloves,item_modifiers,mod,,,"Radiation Gloves Mod",,Strahlungshandschuhe Mod,
+modRadiationGlovesDesc,item_modifiers,mod,,,"Put this on your gloves to reduce radiation",,"Befestigen Sie dies an Ihre Handschuhe, um die Strahlung zu reduzieren.",
+modRadiationLegs,item_modifiers,mod,,,"Radiation Legs Mod",,Strahlungsbeine Mod,
+modRadiationLegsDesc,item_modifiers,mod,,,"Put this on your legs to reduce radiation",,"Befestigen Sie dies an Ihre Beine, um die Strahlung zu reduzieren.",
+modRadiationBoots,item_modifiers,mod,,,"Radiation Boots Mod",,Strahlungsstiefel Mod,
+modRadiationBootsDesc,item_modifiers,mod,,,"Put this on your boots to reduce radiation",,"Befestigen Sie dies an Ihre Stiefel, um die Strahlung zu reduzieren.",
+
+resourceRadium,items,Resource,,,"Radium Chunk",,Radium–Brocken,
+resourceRadiumDesc,items,Resource,,,"A chunk of radium that needs to be refined on a chem bench.",,"Ein Stück Radium, das auf einer chemischen Werkbank veredelt werden kann.",
+resourceForgedRadium,items,Resource,,,"Refined Radium",,Raffiniertes Radium,
+resourceForgedRadiumDesc,items,Resource,,,"A refined radium bar used to line cloth you can fit to armor which will protect you from radiation zones.",,"Ein raffinierter Radiumbarren, der zum Auskleiden von Stoffen verwendet wird, die Sie an Rüstungen anbringen können, um Sie vor Strahlungszonen zu schützen.",
+
+perkAdvancedEngineeringRank3LongDesc,progression,perk Int,,,"You are now an electrician. Learn to craft generators, and build advanced base defense systems such as electric fences & blade traps. Craft military fiber and radiation mods. Gain 20% XP from electrical trap kills.\nEfficient craftsman. All forge recipes cost 10% less, crafting Forged Steel and electrical devices costs 15% less.",,Du bist jetzt Elektriker. Lerne Generatoren zu fertigen und schütze deine Basis mit fortgeschrittenen Verteidigungssystemen wie Elektrozäunen und Klingenfallen. Erhalte 20% EP für Kills mit elektrischen Fallen.\nEffizienter Handwerker. Alle Rezepte für die Schmiede kosten 10% weniger und das Fertigen von geschmiedetem Stahl und elektrischen Geräten kostet 15% weniger.",
+
+buffRadiationName,buffs,Buff,,,"Radiation Suit",,Strahlungsanzug,
+buffRadiationDesc,buffs,Buff,,,"When you you have this buff, you should be protected from all forms of radiation in the world.  If not, full money back guarantee!",,"Wenn Sie diesen Buff haben, sollten Sie vor allen Formen von Strahlung auf der Welt geschützt sein. Wenn nicht, volle Geld-zurück-Garantie!",
+buffRadiationSuite_TP,buffs,Buff,,,"You are fully protected from radiation",,"Sie sind vollständig vor Strahlung geschützt?",

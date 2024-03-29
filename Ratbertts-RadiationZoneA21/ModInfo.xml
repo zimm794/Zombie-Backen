@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="Ratberts-RadiationZone" />
+    <DisplayName value="Ratbertts Radiation Zone" />
+    <Version value="1.0" /> <!-- (Required) SemVer version of the mod. Has to be in the format major.minor[.build[.revision]] (i.e. build and revision can be left out, recommend using them though as typically done with Semantic Versioning -->
+    <Description value="Adds radiation to wastelands AND mods to help you fully protect from it" />
+    <Author value="Ratbertt" />
+    <Website value="http://kittenmegaming.com" />
+</xml>

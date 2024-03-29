@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- buffRadiation03 -->
+
+<configs>
+
+<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+    <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiationWastelands">
+        <requirement name="!HasBuff" buff="god"/>
+        <requirement name="!HasBuff" buff="buffRadiationSuit"/> 
+        <requirement name="InBiome" biome="8"/>
+    </triggered_effect>
+    
+    <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffRadiationSuit">
+        <requirement name="HasBuff" buff="buffRadiationMask"/>
+        <requirement name="HasBuff" buff="buffRadiationChest"/>
+        <requirement name="HasBuff" buff="buffRadiationGloves"/>
+        <requirement name="HasBuff" buff="buffRadiationLegs"/>
+        <requirement name="HasBuff" buff="buffRadiationBoots"/>
+    </triggered_effect>
+</append>
+
+<!-- Adds the new radiation buff from our gear -->
+<append xpath="/buffs">
+
+    <buff name="buffRadiationWastelands" name_key="buffRadiation03Name" description_key="buffRadiation03Desc" tooltip_key="buffRadiation03Tooltip" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
+		<damage_type value="radiation"/>
+		<stack_type value="ignore"/>
+		<duration value="5000"/>
+		<update_rate value="1"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="4"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0">
+				<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="2"/>
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="a_radiated_strong_lp"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="1" fade=".7" effect_name="Hot">
+				<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".7" effect_name="Hot">
+				<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="0"/>
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiationWastelands">
+				<requirement name="!InBiome" biome="8"/>
+			</triggered_effect>            
+
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".6" fade="2"/>
+			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
+		</effect_group>
+	</buff>
+
+    <buff name="buffRadiationMask" hidden="true"></buff>
+    <buff name="buffRadiationChest" hidden="true"></buff>
+    <buff name="buffRadiationGloves" hidden="true"></buff>
+    <buff name="buffRadiationLegs" hidden="true"></buff>
+    <buff name="buffRadiationBoots" hidden="true"></buff>
+
+    <buff name="buffRadiationSuit" name_key="buffRadiationName" description_key="buffRadiationDesc" tooltip_key="buffRadiationSuite_TP" icon="ui_game_symbol_radiation" icon_color="154,205,50">
+        <stack_type value="ignore"/>
+        <effect_group>
+            <passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffRadiationWastelands"/>
+        </effect_group>
+    </buff>    
+</append>
+
+<append xpath="buffs/buff[@name='buffRadiationWastelands']/effect_group">
+    <requirement name="!HasBuff" buff="buffRadiationSuit"/>
+</append>
+
+<!-- <insertAfter xpath="buffs/buff[@name='buffRadiationWastelands']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @action='RemoveBuff']/requirement[@name='CVarCompare']">
+	<requirement name="HasBuff" buff="buffRadiationSuit"/>
+</insertAfter> -->
+
+</configs>

@@ -1,0 +1,9 @@
+<config>
+
+<!--<insertAfter xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRadium" prob="0.045" count="1" tag="artOfMiningLuckyStrikeHarvest"/>-->
+	<insertAfter xpath="/blocks/block[@name='terrOreIron']/drop[@event='Harvest' and @name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRadium" prob="0.25" count="1" tag="oreWoodHarvest"/>
+    </insertAfter>
+
+</config>

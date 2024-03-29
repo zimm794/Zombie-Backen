@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+<!-- Begin your changes after this line -->
+
+	<!-- Adds the icon to the unlock list -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/display_entry[@icon='resourceMilitaryFiber']">
+		<display_entry icon="modGunMeleeRadRemover" name_key="Radiation Armor Mod" has_quality="false" unlock_level="50" >
+			<unlock_entry item="resourceForgedRadium" unlock_tier="1" recipes="modRadiationBoots,modRadiationLegs,modRadiationGloves,modRadiationChest,modRadiationHelmet,resourceForgedRadium" />
+		</display_entry>
+	</insertAfter>
+	<!-- Adds the unlock for the stuff to craft -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='39,100']">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="modRadiationBoots,modRadiationLegs,modRadiationGloves,modRadiationChest,modRadiationHelmet,resourceForgedRadium"/>
+	</insertAfter>	
+
+</configs>

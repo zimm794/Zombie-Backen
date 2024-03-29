@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+    <!--blocked_tags="noMods"-->
+    
+    <!-- Radiation Helmet Mod -->
+    <append xpath="/item_modifiers">
+        <item_modifier name="modRadiationHelmet" installable_tags="head,armorHead" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+            <property name="Extends" value="modGeneralMaster"/>
+            <property name="DescriptionKey" value="modRadiationHelmetDesc"/>
+            <property name="CustomIcon" value="apparelPlantFiberHood"/>
+            <property name="CustomIconTint" value="0,255,0"/>
+            <property name="UnlockedBy" value="craftingArmor"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffRadiationMask"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffRadiationMask"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationSuit"/>
+            </effect_group>
+        </item_modifier>
+    </append>
+
+    <!-- Radiation Chest Mod -->
+    <append xpath="/item_modifiers">
+        <item_modifier name="modRadiationChest" installable_tags="chest,armorChest" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+            <property name="Extends" value="modGeneralMaster"/>
+            <property name="DescriptionKey" value="modRadiationChestDesc"/>
+            <property name="CustomIcon" value="apparelPlantFiberShirt"/>
+            <property name="CustomIconTint" value="0,255,0"/>
+            <property name="UnlockedBy" value="craftingArmor"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffRadiationChest"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffRadiationChest"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationSuit"/>
+            </effect_group>
+        </item_modifier>
+    </append>    
+
+    <!-- Radiation Gloves Mod -->
+    <append xpath="/item_modifiers">
+        <item_modifier name="modRadiationGloves" installable_tags="hands,armorHands" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+            <property name="Extends" value="modGeneralMaster"/>
+            <property name="DescriptionKey" value="modRadiationGlovesDesc"/>
+            <property name="CustomIcon" value="apparelPlantFiberGloves"/>
+            <property name="CustomIconTint" value="0,255,0"/>
+            <property name="UnlockedBy" value="craftingArmor"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffRadiationGloves"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffRadiationGloves"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationSuit"/>
+            </effect_group>
+        </item_modifier>
+    </append>   
+
+    <!-- Radiation Leggings Mod -->
+    <append xpath="/item_modifiers">
+        <item_modifier name="modRadiationLegs" installable_tags="legs,armorLegs" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+            <property name="Extends" value="modGeneralMaster"/>
+            <property name="DescriptionKey" value="modRadiationLegsDesc"/>
+            <property name="CustomIcon" value="apparelPlantFiberPants"/>
+            <property name="CustomIconTint" value="0,255,0"/>
+            <property name="UnlockedBy" value="craftingArmor"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffRadiationLegs"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffRadiationLegs"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationSuit"/>
+            </effect_group>
+        </item_modifier>
+    </append>      
+
+    <!-- Radiation Shoes Mod -->
+    <append xpath="/item_modifiers">
+        <item_modifier name="modRadiationBoots" installable_tags="feet,armorFeet" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+            <property name="Extends" value="modGeneralMaster"/>
+            <property name="DescriptionKey" value="modRadiationBootsDesc"/>
+            <property name="CustomIcon" value="apparelPlantFiberShoes"/>
+            <property name="CustomIconTint" value="0,255,0"/>
+            <property name="UnlockedBy" value="craftingArmor"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffRadiationBoots"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffRadiationBoots"/>
+                <triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadiationSuit"/>
+            </effect_group>
+        </item_modifier>
+    </append>  
+
+</configs>

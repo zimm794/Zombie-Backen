@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+<!-- Begin your changes after this line -->
+
+	<append xpath="/recipes">
+
+		<recipe name="resourceForgedRadium" count="1" craft_time="60" craft_area="chemistryStation" tags="learnable,craftingArmor,chemStationCrafting">
+			<ingredient name="resourceRadium" count="15"/>
+			<ingredient name="resourceAcid" count="1"/>
+			<ingredient name="resourceClayLump" count="500"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="250"/>
+			<ingredient name="toolCookingPot" count="10"/>
+		</recipe>
+
+		<recipe name="modRadiationHelmet" count="1" craft_time="120" craft_area="workbench" tags="learnable,craftingArmor,workbenchCrafting">
+			<ingredient name="resourceForgedRadium" count="1"/>
+			<ingredient name="resourceMilitaryFiber" count="2"/>
+			<ingredient name="apparelPlantFiberHood" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceSewingKit" count="4"/>
+		</recipe>
+
+		<recipe name="modRadiationChest" count="1" craft_time="120" craft_area="workbench" tags="learnable,craftingArmor,workbenchCrafting">
+			<ingredient name="resourceForgedRadium" count="2"/>
+			<ingredient name="resourceMilitaryFiber" count="5"/>
+			<ingredient name="apparelPlantFiberShirt" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceSewingKit" count="8"/>
+		</recipe>
+
+		<recipe name="modRadiationGloves" count="1" craft_time="120" craft_area="workbench" tags="learnable,craftingArmor,workbenchCrafting">
+			<ingredient name="resourceForgedRadium" count="1"/>
+			<ingredient name="resourceMilitaryFiber" count="2"/>
+			<ingredient name="apparelPlantFiberGloves" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="15"/>
+			<ingredient name="resourceSewingKit" count="3"/>
+		</recipe>
+
+		<recipe name="modRadiationLegs" count="1" craft_time="120" craft_area="workbench" tags="learnable,craftingArmor,workbenchCrafting">
+			<ingredient name="resourceForgedRadium" count="2"/>
+			<ingredient name="resourceMilitaryFiber" count="4"/>
+			<ingredient name="apparelPlantFiberPants" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSewingKit" count="6"/>
+		</recipe>						
+
+		<recipe name="modRadiationBoots" count="1" craft_time="120" craft_area="workbench" tags="learnable,craftingArmor,workbenchCrafting">
+			<ingredient name="resourceForgedRadium" count="1"/>
+			<ingredient name="resourceMilitaryFiber" count="2"/>
+			<ingredient name="apparelPlantFiberShoes" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="30"/>
+			<ingredient name="resourceSewingKit" count="5"/>
+		</recipe>			
+		
+	</append>
+
+</configs>
