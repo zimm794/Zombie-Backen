@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+	<Name value="Ana_Vehicle_Respawner" />
+	<Author value="Anabella" />
+	<Description value="Respawns cars, buses, army trucks, and the new a21 vehicles.  A21 b324" />
+	<DisplayName value="Ana's Vehicle Respawner" />
+	<Website value="" />
+	<Version value="1.0.0" />
+	<GameVersion value="21.0.324" />
+</xml>
