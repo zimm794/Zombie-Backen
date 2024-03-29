@@ -1,9 +1,0 @@
-﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-cleanMoneyATM,blocks,block,,,Clean Money ATM
-CleanMoneyATMDesc,blocks,block,,,This machine is the dream of every thug in the apocalypse. Craft yours and rule the wasteland. Unlocked by perkAdvancedEngineering level 4.
-resourceEmptyMoldCC,items,item,,,Empty Mold CC
-resourceEmptyMoldCCDesc,items,item,,,A simple empty mold used to make money molds.
-toolOldCashMold,items,item,,,Old Cash Mold
-toolOldCashMoldDesc,items,item,,,Mold to make money but from old money.
-toolcasinoCoinMold,items,item,,,Casino Coin Mold
-toolcasinoCoinMoldDesc,items,item,,,Mold to make casino coins now in the apocalypse they are worth much.
