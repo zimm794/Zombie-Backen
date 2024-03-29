@@ -1,0 +1,10 @@
+Key,English
+vehicleGolfCart,Golf Cart
+vehicleGolfCartchassis,Golf Cart Chassis
+vehicleGolfCartchassisDesc,Parts needed to craft the Golf Cart. Grease Monkey level 2 required.
+vehicleGolfCartaccessories,Golf Cart Accessories
+vehicleGolfCartaccessoriesDesc,Parts needed to craft the Golf Cart. Grease Monkey level 2 required.
+vehicleGolfCartplaceable,Golf Cart
+vehicleGolfCartplaceableDesc,It might not be much but it's better than walking!
+meleeGolfClub,items,Melee,KgNone,Golf Club
+meleeGolfClubDesc,items,Melee,KgNone,No golf balls? There's always plenty of zombies to practice that swing on!
