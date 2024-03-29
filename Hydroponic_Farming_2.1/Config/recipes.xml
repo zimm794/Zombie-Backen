@@ -1,0 +1,179 @@
+<Configs>
+
+	<remove xpath="/recipes/recipe[@name='plantedAloe1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedBlueberry1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedChrysanthemum1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedCoffee1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedCorn1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedCotton1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedGoldenrod1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedGraceCorn1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedHop1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedMushroom1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedPotato1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedYucca1']"/>
+	<remove xpath="/recipes/recipe[@name='plantedPumpkin1']"/>
+
+	<append xpath="/recipes">
+
+<!-- HYDROPONICE VERTICAL FARM RECIPES -->
+	<recipe name="HydroponicVerticalFarm" count="1" craft_time="300" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceHeadlight" count="4"/>	
+		<ingredient name="resourceMechanicalParts" count="8"/>
+		<ingredient name="farmPlotBlockVariantHelper" count="2"/>
+		<ingredient name="toolCookingPot" count="1"/>		
+	</recipe>
+
+	<recipe	name="resourceCropAloeLeaf" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedAloe1" count="5"/>
+	</recipe>
+
+	<recipe	name="foodCropBlueberries" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedBlueberry1" count="5"/>
+	</recipe>
+
+	<recipe	name="resourceCropChrysanthemumPlant" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedChrysanthemum1" count="5"/>
+	</recipe>
+
+	<recipe	name="resourceCropCoffeeBeans" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedCoffee1" count="5"/>
+	</recipe>
+
+	<recipe	name="foodCropCorn" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedCorn1" count="5"/>
+	</recipe>
+
+	<recipe	name="resourceCropCottonPlant" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedCotton1" count="5"/>
+	</recipe>
+
+	<recipe	name="resourceCropGoldenrodPlant" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedGoldenrod1" count="5"/>
+	</recipe>
+
+	<recipe	name="foodCropGraceCorn" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedGraceCorn1" count="5"/>
+	</recipe>
+
+	<recipe	name="resourceCropHopsFlower" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedHop1" count="5"/>
+	</recipe>	
+
+	<recipe	name="foodCropMushrooms" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedMushroom1" count="5"/>
+	</recipe>
+
+	<recipe	name="foodCropPotato" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedPotato1" count="5"/>
+	</recipe>
+
+	<recipe	name="foodCropYuccaFruit" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedYucca1" count="5"/>
+	</recipe>	
+
+	<recipe	name="foodCropPumpkin" count="20" craft_time="560" craft_area="HydroponicVerticalFarm" craft_tool="resourcePotassiumNitratePowder" tags="HVF_Crafting,HVF_BUFF_SE">
+		<ingredient name="plantedPumpkin1" count="5"/>
+	</recipe>	
+
+<!-- HYDROPONICE SEED STATION RECIPES -->
+	<recipe name="HydroponicSeedStaion" count="1" craft_time="300" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceHeadlight" count="8"/>	
+		<ingredient name="resourceMechanicalParts" count="16"/>
+		<ingredient name="farmPlotBlockVariantHelper" count="4"/>	
+		<ingredient name="toolCookingPot" count="4"/>			
+	</recipe>
+
+<recipe name="plantedAloe1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="resourceCropAloeLeaf" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="resourceCropAloeLeaf"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedBlueberry1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="foodCropBlueberries" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="foodCropBlueberries"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="plantedChrysanthemum1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="resourceCropChrysanthemumPlant" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="resourceCropChrysanthemumPlant"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedCoffee1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="resourceCropCoffeeBeans" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="resourceCropCoffeeBeans"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedCorn1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="foodCropCorn" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="foodCropCorn"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedCotton1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="resourceCropCottonPlant" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="resourceCropCottonPlant"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedGoldenrod1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="resourceCropGoldenrodPlant" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="resourceCropGoldenrodPlant"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedGraceCorn1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="foodCropGraceCorn" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="foodCropGraceCorn"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedHop1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="resourceCropHopsFlower" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="resourceCropHopsFlower"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedMushroom1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="foodCropMushrooms" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="foodCropMushrooms"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedPotato1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="foodCropPotato" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="foodCropPotato"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedYucca1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="foodCropYuccaFruit" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="foodCropYuccaFruit"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedPumpkin1" count="1" craft_time="150" craft_area="HydroponicSeedStaion" craft_tool="bucketRiverWater" tags="perkLivingOffTheLand,learnable,HSS_BUFF_SE">
+	<ingredient name="foodCropPumpkin" count="4"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,3" operation="base_add" value="-1,-2" tags="foodCropPumpkin"/>
+	</effect_group>
+</recipe>
+
+	</append>
+</Configs>	

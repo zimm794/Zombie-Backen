@@ -1,0 +1,16 @@
+<!-- "Living off the land" perk tweaks to seeds -->
+<config>
+	<set xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/@max_level">4</set>
+	
+	<!-- Add 1 levels to the perk -->
+	<set xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@name='CraftingTier']/@level">0,4</set>
+
+	<!-- Increase the seed harvest for the new levels -->
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group">
+		<passive_effect name="CraftingTime" operation="perc_add" level="3,4" value="-0.25,-0.5" tags="HVF_Crafting"/>
+		<passive_effect name="CraftingTier" operation="perc_add" level="1,2,3,4" value="0,0,1,2" tags="perkLivingOffTheLand"/>
+
+		<passive_effect name="HarvestCount" operation="perc_add" level="4" value="2" tags="cropHarvest,wildCropsHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_set" level="4" value="1" tags="bonusCropHarvest"/>
+	</append>
+</config>

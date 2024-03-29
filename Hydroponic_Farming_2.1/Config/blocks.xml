@@ -1,0 +1,141 @@
+<configs>
+<!-- HYDROPONICE SEED STATION UI LIST -->
+
+	<append xpath="/blocks/block[@name='plantedAloe1']/property[@name='Group']/@value">,HSS_All,HSS_Med</append>
+	<append xpath="/blocks/block[@name='plantedBlueberry1']/property[@name='Group']/@value">,HSS_All,HSS_Food,HSS_Drink,HSS_Med</append>	
+	<append xpath="/blocks/block[@name='plantedChrysanthemum1']/property[@name='Group']/@value">,HSS_All,HSS_Drink,HSS_Med,HSS_Res</append>
+	<append xpath="/blocks/block[@name='plantedCoffee1']/property[@name='Group']/@value">,HSS_All,HSS_Drink</append>
+	<append xpath="/blocks/block[@name='plantedCorn1']/property[@name='Group']/@value">,HSS_All,HSS_Food</append>
+	<append xpath="/blocks/block[@name='plantedCotton1']/property[@name='Group']/@value">,HSS_All,HSS_Res</append>
+	<append xpath="/blocks/block[@name='plantedGoldenrod1']/property[@name='Group']/@value">,HSS_All,HSS_Drink</append>	
+	<append xpath="/blocks/block[@name='plantedGraceCorn1']/property[@name='Group']/@value">,HSS_All,HSS_Drink,HSS_Res</append>	
+	<append xpath="/blocks/block[@name='plantedHop1']/property[@name='Group']/@value">,HSS_All,HSS_Food,HSS_Drink</append>
+	<append xpath="/blocks/block[@name='plantedMushroom1']/property[@name='Group']/@value">,HSS_All,HSS_Food</append>
+	<append xpath="/blocks/block[@name='plantedPotato1']/property[@name='Group']/@value">,HSS_All,HSS_Food</append>
+	<append xpath="/blocks/block[@name='plantedYucca1']/property[@name='Group']/@value">,HSS_All,HSS_Drink</append>
+	<append xpath="/blocks/block[@name='plantedPumpkin1']/property[@name='Group']/@value">,HSS_All,HSS_Food</append>
+
+<!-- HYDROPONICE SEED STATION UI LIST -->
+
+<append xpath="/blocks">
+
+	<!-- *** HYDROPONICE VERTICAL FARM -->
+	<block name="HydroponicVerticalFarm">
+
+		<!-- Class -->
+		<property name="Class" value="Workstation"/>
+		<property class="Workstation">
+			<property name="Modules" value="output"/>
+			<property name="CraftingAreaRecipes" value="HydroponicVerticalFarm"/>	
+		</property>
+		<!-- UI_Info -->
+    	<property name="CustomIcon" value="plantHydroponicVertical"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Stacknumber" value="500"/>
+		<property name="WorkstationIcon" value="ui_game_symbol_crops"/>
+		<!-- Visual -->
+		<property name="Material" value="Miron_scrap"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Plants/plantHydroponicVerticalPrefab"/>	
+		<property name="ModelOffset" value="0,0.5,0"/>	
+		<property name="MultiBlockDim" value="1,2,1"/>	
+		<property name="ImposterDontBlock" value="true"/>
+		<!-- Placement -->
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="IsTerrainDecoration" value="true"/>	
+		<property name="StabilitySupport" value="true"/>
+		<!-- Value -->
+		<property name="Weight" value="0"/>
+		<property name="EconomicValue" value="1000"/>
+		<property name="TraderStageTemplate" value="midTier1"/>
+		<!-- Interaction -->
+		<property name="MaxDamage" value="800"/>
+		<property name="HeatMapStrength" value="0"/>
+		<property name="HeatMapTime" value="5000"/>
+		<property name="HeatMapFrequency" value="1000"/>
+		<property name="OpenSound" value="open_workbench"/>
+		<property name="CloseSound" value="close_workbench"/>
+		<property name="TakeDelay" value="5"/>
+		<property class="RepairItems">
+			<property name="resourceForgedIron" value="10"/>
+			<property name="resourceMetalPipe" value="10"/>
+			<property name="resourceWood" value="40"/>
+		</property>
+		<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="2" tag="allHarvest"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceHeadlight" count="2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5" tag="salvageHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		<!-- Sorting -->
+		<property name="SortOrder1" value="B281"/>
+		<property name="SortOrder2" value="0303"/>
+		<property name="Group" value="Building,TCScience,advBuilding"/>
+		<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		
+</block>
+
+<!-- *** HYDROPONICS SEED STATION -->
+<block name="HydroponicSeedStaion">
+
+	<!-- Class -->
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="HydroponicSeedStaion"/>	
+	</property>
+	<!-- UI_Info -->
+    <property name="CustomIcon" value="plantHydroponicAloe"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_crops"/>
+	<!-- Visual -->
+	<property name="Material" value="Miron_scrap"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Plants/plantHydroponicAloePrefab"/>	
+	<property name="ModelOffset" value="0,0.5,0"/>	
+	<property name="MultiBlockDim" value="2,2,1"/>	
+	<property name="ImposterDontBlock" value="true"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>	
+	<property name="StabilitySupport" value="true"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>	
+	<property name="EconomicValue" value="1000"/>
+	<property name="TraderStageTemplate" value="midTier1"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="800"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="OpenSound" value="open_workbench"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="TakeDelay" value="5"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+		<property name="resourceMetalPipe" value="10"/>
+		<property name="resourceWood" value="40"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2" tag="allHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceHeadlight" count="2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="5" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0303"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+
+</block>
+
+</append>
+</configs>

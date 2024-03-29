@@ -1,0 +1,52 @@
+<configs>
+
+<!-- HYDROPONICE VERTICAL FARM UI LIST -->
+
+	<append xpath="/items/item[@name='resourceCropAloeLeaf']/property[@name='Group']/@value">,HVF_All,HVF_Med</append>
+	<append xpath="/items/item[@name='foodCropBlueberries']/property[@name='Group']/@value">,HVF_All,HVF_Food,HVF_Drink,HVF_Med</append>	
+	<append xpath="/items/item[@name='resourceCropChrysanthemumPlant']/property[@name='Group']/@value">,HVF_All,HVF_Drink,HVF_Med,HVF_Res</append>
+	<append xpath="/items/item[@name='resourceCropCoffeeBeans']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
+	<append xpath="/items/item[@name='foodCropCorn']/property[@name='Group']/@value">,HVF_All,HVF_Food</append>
+	<append xpath="/items/item[@name='resourceCropCottonPlant']/property[@name='Group']/@value">,HVF_All,HVF_Res</append>
+	<append xpath="/items/item[@name='resourceCropGoldenrodPlant']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>	
+	<append xpath="/items/item[@name='foodCropGraceCorn']/property[@name='Group']/@value">,HVF_All,HVF_Drink,HVF_Res</append>	
+	<append xpath="/items/item[@name='resourceCropHopsFlower']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
+	<append xpath="/items/item[@name='foodCropMushrooms']/property[@name='Group']/@value">,HVF_All,HVF_Food,HVF_Drink</append>
+	<append xpath="/items/item[@name='foodCropPotato']/property[@name='Group']/@value">,HVF_All,HVF_Food</append>
+	<append xpath="/items/item[@name='foodCropYuccaFruit']/property[@name='Group']/@value">,HVF_All,HVF_Drink</append>
+	<append xpath="/items/item[@name='foodCropPumpkin']/property[@name='Group']/@value">,HVF_All,HVF_Food</append>
+	
+<!-- HYDROPONICE VERTICAL FARM UI LIST -->
+
+	<append xpath="/items/item[@name='drugSteroids']">
+		<effect_group tiered="false">
+			<passive_effect name="CraftingTime" operation="perc_subtract" value="0.1" tags="HVF_BUFF_SE"/>
+		</effect_group>
+	</append>
+
+	<append xpath="/items/item[@name='resourceWaterFilter']">
+		<effect_group tiered="false">
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="resourceCropAloeLeaf"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="foodCropBlueberries"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="resourceCropChrysanthemumPlant"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="resourceCropCoffeeBeans"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="foodCropCorn"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="resourceCropCottonPlant"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="resourceCropGoldenrodPlant"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="foodCropGraceCorn"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="resourceCropHopsFlower"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="foodCropMushrooms"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="foodCropPotato"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="foodCropYuccaFruit"/>
+			<passive_effect name="CraftingIngredientCount" operation="base_subtract" value="1" tags="foodCropPumpkin"/>												
+		</effect_group>
+	</append>
+
+		<append xpath="/items/item[@name='smallEngine']">
+		<effect_group tiered="false">
+			<passive_effect name="CraftingTime" operation="perc_subtract" value="0.15" tags="HVF_BUFF_SE"/>
+			<passive_effect name="CraftingTime" operation="perc_subtract" value="0.5" tags="HSS_BUFF_SE"/>
+		</effect_group>
+	</append>	
+
+</configs>

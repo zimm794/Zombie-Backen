@@ -1,0 +1,26 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
+
+XUI_windowTools_HVF,UI,farming,,,Tools,,,
+
+HydroponicVerticalFarm,blocks,Workstation,,,Hydroponic Growing Station,,
+HydroponicVerticalFarmDesc,blocks,Workstation,,,This station lets you live the farming lifestyle without the need to get your hands dirty,,"
+
+XUI_CraftingList_HVF_All,UI,farming,,,All Crops,,,
+XUI_CraftingList_HVF_Food,UI,farming,,,Crops For Food,,,
+XUI_CraftingList_HVF_Drink,UI,farming,,,Crops For Drinks,,,
+XUI_CraftingList_HVF_Med,UI,farming,,,Crops For Medical,,,
+XUI_CraftingList_HVF_Res,UI,farming,,,Crops For Resources,,,
+
+HydroponicSeedStaion,blocks,Workstation,,,Hydroponic Seed Station,,
+HydroponicSeedStaionDesc,blocks,Workstation,,,This station lets you get better returns on seed crafting.\n\nWorks with the Living Off The Land perk for cheaper recipes,,"
+
+XUI_CraftingList_HSS_All,UI,farming,,,All Seeds Conversions,,,
+XUI_CraftingList_HSS_Food,UI,farming,,,Seeds For Food,,,
+XUI_CraftingList_HSS_Drink,UI,farming,,,Seeds For Drinks,,,
+XUI_CraftingList_HSS_Med,UI,farming,,,Seeds For Medical,,,
+XUI_CraftingList_HSS_Res,UI,farming,,,Seeds For Resources,,,
+
+perkLivingOffTheLandRank3LongDesc,progression,perk For,,,Triple the harvest of wild or planted crops\nSeeds cost 25% less crop to make in the Hydroponic Seed Station.,,
+
+perkLivingOffTheLandRank4Desc,progression,perk For,,,Hydroponic Farmer,
+perkLivingOffTheLandRank4LongDesc,progression,perk For,,,Decrease growing time by 50% when using the Hydroponic Growing Station.\nSeeds cost 50% less crops to make in the Hydroponic Seed Station,,
