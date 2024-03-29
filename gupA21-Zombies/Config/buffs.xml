@@ -1,0 +1,42 @@
+<configs>
+
+<append xpath="/buffs">
+
+	<buff name="buffBabyGoesBoom" hidden="true" remove_on_death="false">
+	<stack_type value="replace"/>
+  <duration value="10"/>
+    <effect_group>
+      <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="20"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="20"/>
+     </effect_group>
+  </buff>
+  
+	<buff name="buffGuppyZombieSeth" hidden="true" remove_on_death="false"> <!--Works -->
+	<stack_type value="replace"/>
+  <duration value="5"/>
+
+      <effect_group name="RunCvars">
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="Organics1" operation="set" value="randomint(1,2)"/>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="Organics2" operation="set" value="randomint(1,2)"/>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="Organics3" operation="set" value="randomint(1,2)"/>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="Organics4" operation="set" value="randomint(1,2)"/>
+      </effect_group>
+ 
+      <effect_group name="ReadCvars">
+        <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="organic1">
+          <requirement name="CVarCompare" cvar="Organics1" operation="Equals" value="1"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="organic2">
+          <requirement name="CVarCompare" cvar="Organics2" operation="Equals" value="1"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="organic3">
+          <requirement name="CVarCompare" cvar="Organics3" operation="Equals" value="1"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="organic4">
+          <requirement name="CVarCompare" cvar="Organics4" operation="Equals" value="1"/>
+        </triggered_effect>        
+      </effect_group>
+  </buff>  
+  
+</append>
+</configs>
